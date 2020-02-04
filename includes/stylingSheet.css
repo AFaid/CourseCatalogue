@@ -1,0 +1,573 @@
+html, body{
+    height: 100%;
+}
+
+body{
+	margin-top:20px;
+	line-height: 1.6em;
+	font-size: 16px;
+	margin-bottom: 50px;
+}
+
+footer{
+	position: static;
+	width: 100%;
+	padding-top: 30px;
+}
+
+summary{
+	cursor: pointer;
+	vertical-align: center;
+}
+
+details summary::-webkit-details-marker {
+	padding-left: 10px;
+	padding-top: 7px;
+	float:right;
+	color: black;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+  padding-left: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4f2683;; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8267A1; 
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+	font-family: 'NovecentowideNormalRegular';
+	overflow: hidden;
+	text-transform: none;
+}
+
+.websiteHeader h3{
+	font-weight: 500;
+	color: #4D4A4D;
+	font-size: 28px;
+	padding: 0px;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+.navBar{
+	background-color:#4f2683;
+	color:#ffffff;
+	border: solid white;
+}
+
+.navBar ul{
+	padding-left: 30px;
+	margin: 0px;
+	list-style: none;
+}
+
+.navBar li{
+	display: inline;
+}
+
+.navBar a{
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 14px;
+}
+
+.navBar a:hover{
+	background-color: #8267A8;
+}
+
+.dropdown-menu li:hover{
+	background-color: red;
+}
+
+.pageTitle h3{
+	font-weight: normal;
+	font-size: 38px;
+	color: black;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	margin: auto;
+	text-align: Center;
+}
+
+.pageTitle h4{
+	font-weight: normal;
+	font-size: 38px;
+	color: black;
+	padding-top: 20px;
+	padding-bottom: 0px;
+	margin: auto;
+	text-align: left;
+	display: inline-block;
+}
+
+.pageTitle h6{
+	font-weight: normal;
+	font-size: 22px;
+	color: black;
+	margin: auto;
+	padding-right: 25px;
+	float: left;
+	text-align: left;
+}
+
+.pageTitle h5{
+	font-weight: normal;
+	font-size: 32px;
+	color: black;
+	margin: auto;
+	text-align: center;
+}
+
+.subHeader{
+	display: inline-block;
+	font-size: 24px;
+}
+
+.bold{
+	font-weight: bold !important;
+}
+
+.advSearch{
+    display:block;
+    border: 1px dotted #4f2683;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    padding: 20px 10px;
+    padding-right: 10px;
+	transform: capitalize;
+}
+
+.advSearch label{
+	display: block;
+	color: #4D4A4D;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:700;
+	margin-top: 20px;
+}
+
+.advSearch input{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.advSearch input:not([type="radio"]):not([type="submit"]):not([type="checkbox"]){
+    display: block;
+    width: 95%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.advSearch input[type=date]{
+	width: 50% !important;
+}
+
+
+.advSearch input[type=time]{
+	width: 50% !important;
+}
+
+.advSearch input:not([type="radio"]):focus{
+	 outline: none;
+	 box-shadow: 0 0 5px #66AFE9;
+	 border: 0.5px solid #66AFE9;
+}
+
+.advSearch select{
+    display: block;
+	width: 25%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.advSearch select:focus{
+	 outline: none;
+	 box-shadow: 0 0 5px #66AFE9;
+	 border: 0.5px solid #66AFE9;
+}
+
+.advSearch li{
+	list-style: none;
+}
+
+.option-value{
+	transform: lowercase;
+	padding-right: 10px;
+}
+
+.floatLeft {
+	display: inline-block;
+	float: left;
+	width: 50%;
+	margin-top: 0px;
+}
+
+.floatLeft label{
+	display: block;
+	width: 50%;
+}
+
+.floatLeft input{
+	padding-left: 10px;
+}
+
+.floatLeft input[type=date]{
+	width: 25%;
+}
+
+.floatLeft input[type=radio]{
+	padding-bottom: 1000px;
+	transform: capitalize;
+}
+
+.lightRed{
+	color: 
+}
+
+#submitBtn{
+	float: right;
+	width: 100%;
+	display: block;
+    padding: 6px 12px;
+    margin-bottom: 30px;
+	margin-top:20px;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+	border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+	color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+	letter-spacing: 0.15em;
+}
+
+#submitBtn:hover{
+	color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+#CourseTypeOptions{
+	display:normal !important;
+	margin-right: 10px;
+}
+
+#upperMargin{
+	margin-top: 10px;
+}
+
+.WCSLogo {
+    width: 209px;
+    height: 50px;
+    float: right;
+    margin-top: -60px;
+	vertical-align: center;
+}
+
+.checkbox-item input[type="checkbox"]:checked + .checkbox-Text{
+	text-decoration: line-through;
+}
+
+.checkbox-item{
+	padding-left: 20px;
+	margin-bottom: 10px;
+	width: max-content;
+}
+
+.checkbox-item details summary::-webkit-details-marker {
+	padding-left: 10px;
+	padding-top: 7px;
+	float:right;
+}
+
+.checkbox-item details summary{
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.link{
+	letter-spacing: normal;
+}
+
+.floatRight{
+	float: right;
+	padding: inherit;
+	display: inline-block;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+#main{
+	padding-top:0px;
+}
+
+.onoffswitch {
+    position: relative; width: 100px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.onoffswitch label{
+	margin-top: 0px;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;'
+	margin-top:0px !important;
+}
+
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 11px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "ACTIVE";
+    padding-left: 10px;
+    background-color: #32CD32; color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+    content: "INACTIVE";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block; width: 18px; margin-top: 6px;
+	margin-bottom: 6px; margin-left:10px; margin-Right:10px;
+    background: #FFFFFF;
+    border: 2px solid #999999; border-radius: 20px;
+    position: absolute; top: 0; bottom: 0; right: 56px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.notes-popup {
+	background-color: white;
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 15px;
+	border: 3px solid #f1f1f1;
+	z-index: 9;
+}
+
+/* Add styles to the form container */
+.notes-container {
+	max-width: 600px;
+	padding: 10px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.notes-container textarea{
+	padding: 10px;
+}
+
+/* Full-width input fields */
+.notes-container input[type=text]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.notes-container input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+.notes-container input[type=submit]{
+	font-family: 'NovecentowideNormalRegular';
+}
+
+/* Add a red background color to the cancel button */
+.notes-container .closeNotes {
+  cursor: pointer;
+  font-size:25px;
+  float: right;
+}
+
+/* Add some hover effects to buttons */
+.notes-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.pageTitle .glyphicon-pencil{
+	margin-left: 20px;
+	margin-bottom:20px;
+	font-size:22px;
+}
+
+.pageTitle .glyphicon-envelope{
+	margin-left: 20px;
+	margin-bottom:20px;
+	font-size:22px;
+}
+
+.pageTitle .glyphicon-plus{
+	padding-bottom: 10px;
+	cursor: pointer;
+}
+
+.hide{
+	display: none;
+}
+
+#saveBtn{
+	float: right;
+	display: block;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+	border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+	color: #fff;
+    background-color: #71D578;
+    border-color: #65BA6B;
+	letter-spacing: 0.15em;
+	width: 100%
+}
+
+#saveBtn:hover{
+	background-color: #42C565;
+}
+
+.green{
+	color: #32CD32;
+}
+
+.orange{
+	color: #E9541E;
+	
+}
+
+.orange a:link{
+	color: #E9541E;
+}
+
+.container details summary::-webkit-details-marker {
+	display: block;
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: grey;
+}
+
+.notes-section{
+	float: right;
+	display: inline-block;
+	width: 45%
+}
+.ToDoList-Container{
+	float: Left;
+	display: inline-block;
+	width: 45%;
+}
+
+.searchScreen-Nav{
+	float: Left;
+    background-color: #f3f3f3;
+	border-radius: 5px;
+	border: 1px dotted #4f2683;
+	border-bottom: none;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.searchScreen-Nav a{
+    border-radius: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: black
+}
+
+
+
+
+
+
+

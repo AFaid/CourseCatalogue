@@ -1,0 +1,549 @@
+
+		body {
+			padding:5px 20px;
+			text-align: center;
+			font: 13px Arial, Helvetica;		
+		}
+		
+		/* Relative positioning*/
+		#wrapper {
+			position: relative;
+			margin: 0px auto 0px auto;
+			/*border: 1px solid #fafafa;
+			-moz-box-shadow: 0 3px 3px rgba(0,0,0,.5);
+			-webkit-box-shadow: 0 3px 3px rgba(0,0,0,.5);
+			box-shadow: 0 3px 3px rgba(0,0,0,.5);*/
+		}
+		
+		/* Hide the original tooltips contents */
+		.pin {
+			display: none;
+		}
+		
+		/* Begin styling the tooltips and pins */
+		.tooltip-up, .tooltip-down {
+			position: absolute;
+			background: url(http://red-team-design.com//dist/uploads/2011/10/arrow-up-down.png);
+			width: 36px;
+			height: 52px;
+		}
+		
+		.tooltip-down {
+			background-position: 0 -52px;
+		}
+		
+		.tooltip {
+			display: none;
+			width: 200px;
+			cursor: help;
+			text-shadow: 0 1px 0 #fff;
+			position: absolute;
+			top: 10px;
+			left: 50%;
+			z-index: 999;
+			margin-left: -115px;
+			padding:15px;
+			color: #222;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+			-moz-box-shadow: 0 3px 0 rgba(0,0,0,.7);
+			-webkit-box-shadow: 0 3px 0 rgba(0,0,0,.7);
+			box-shadow: 0 3px 0 rgba(0,0,0,.7);
+			background: #fff1d3;
+			background: -webkit-gradient(linear, left top, left bottom, from(#fff1d3), to(#ffdb90));
+			background: -webkit-linear-gradient(top, #fff1d3, #ffdb90);
+			background: -moz-linear-gradient(top, #fff1d3, #ffdb90);
+			background: -ms-linear-gradient(top, #fff1d3, #ffdb90);
+			background: -o-linear-gradient(top, #fff1d3, #ffdb90);
+			background: linear-gradient(top, #fff1d3, #ffdb90);			
+		}
+		
+		.tooltip::after {
+			content: '';
+			position: absolute;
+			top: -10px;
+			left: 50%;
+			margin-left: -10px;
+			border-bottom: 10px solid #fff1d3;
+			border-left: 10px solid transparent;
+			border-right :10px solid transparent;
+		}
+		
+		.tooltip-down .tooltip {
+			bottom: 12px;
+			top: auto;
+		}
+		
+		.tooltip-down .tooltip::after {
+			bottom: -10px;
+			top: auto;
+			border-bottom: 0;
+			border-top: 10px solid #ffdb90;
+		}
+		
+		.tooltip h2 {
+			font: bold 1.3em 'NovecentowideLightBold', Tahoma, Arial;
+			margin: 0 0 10px;
+		}
+		
+		.tooltip ul {
+			margin: 20px;
+			padding: 0;
+			list-style: circle;
+			text-align:left;
+		}		
+
+
+	/* Layout styles */
+	
+	.westernStacked {
+		float:right;
+		margin:5px 30px 0 0 ;
+	}
+
+	.footerP {
+		margin-top:20px;
+	}
+	
+	.pageTitleHeader {
+		text-align:left;
+	}
+		
+		
+	/* Bootstrap styles */
+	
+	/* Line 1060 
+
+{
+  box-sizing: border-box;
+}*/
+
+/* Line 3366 */
+.collapse
+{
+  display: none;
+  visibility: hidden;
+}
+
+/* Line 4067 */
+.navbar-collapse
+{
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: transparent;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1) inset;
+}
+
+/* Line 4080 */
+.navbar-collapse
+{
+  width: auto;
+  border-top-width: 0px;
+  border-top-style: none;
+  box-shadow: none;
+}
+
+/* Line 4086 */
+.navbar-collapse.collapse
+{
+  display: block;
+  height: auto;
+  padding-bottom: 0px;
+  overflow-x: visible;
+  overflow-y: visible;
+  visibility: visible;
+}
+
+/* Line 4113 */
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse
+{
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* Line 4121 */
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse
+{
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/* Line 4426 */
+.navbar-default .navbar-collapse, .navbar-default .navbar-form
+{
+  border-top-color: #e7e7e7;
+  border-right-color: #e7e7e7;
+  border-bottom-color: #e7e7e7;
+  border-left-color: #e7e7e7;
+}
+
+
+
+  
+
+/* Line 1060 *
+{
+  box-sizing: border-box;
+}*/
+
+
+/* Line 46 */
+a
+{
+  background-color: transparent;
+}
+
+/* Line 1091 */
+a
+{
+  color: #337ab7;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+}
+
+/* Line 49 */
+a:active, a:hover
+{
+  outline-width: 0px;
+  outline-style: none;
+}
+
+/* Line 1095 */
+a:hover, a:focus
+{
+  color: #23527c;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+/* Line 1095 */
+a:hover, a:focus
+{
+  color: #23527c;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+/* Line 1100 */
+a:focus
+{
+  outline-width: thin;
+  outline-style: dotted;
+  outline-offset: -2px;
+}
+
+/* Line 3866 */
+.nav > li > a
+{
+  position: relative;
+  display: block;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  text-decoration:none;
+}
+
+/* Line 4212 */
+.navbar-nav > li > a
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+/* Line 4248 */
+.navbar-nav > li > a
+{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Line 3871 */
+.nav > li > a:hover, .nav > li > a:focus
+{
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  background-color: #eeeeee;
+}
+
+/* Line 3871 */
+.nav > li > a:hover, .nav > li > a:focus
+{
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  background-color: #eeeeee;
+}
+
+/* Line 4396 */
+.navbar-default .navbar-nav > li > a
+{
+  color: #777777;
+}
+
+/* Line 4404 */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
+{
+  color: #555555;
+  background-color: #e7e7e7;
+}
+
+/* Line 4399 */
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
+{
+  color: #333333;
+  background-color: transparent;
+}
+
+/* Line 4399 */
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
+{
+  color: #333333;
+  background-color: transparent;
+}
+
+/* Line 4404 */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
+{
+  color: #555555;
+  background-color: #e7e7e7;
+}
+
+/* Line 4404 */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
+{
+  color: #555555;
+  background-color: #e7e7e7;
+}
+
+http://studentservices.uwo.ca/wellness/includes/layout.css
+
+/* Line 50 */
+nav.navbar.navbar-default > div.container-fluid > div#navbar.navbar-collapse.collapse > ul.nav.navbar-nav > li > a
+{
+  color: #ffffff;
+  font-family: "NovecentowideNormalRegular";
+}
+
+/* Line 56 */
+nav.navbar.navbar-default > div.container-fluid > div#navbar.navbar-collapse.collapse > ul.nav.navbar-nav > li.active > a
+{
+  background-color: #8267a8;
+}
+
+/* Line 61 */
+nav.navbar.navbar-default > div.container-fluid > div#navbar.navbar-collapse.collapse > ul.nav.navbar-nav > li > a:hover
+{
+  color: #ffffff;
+  background-color: #8267a8;
+}
+
+/* Line 1060 
+
+{
+  box-sizing: border-box;
+}*/
+
+/* Line 1164 */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+{
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+    font-family: "NovecentowideNormalRegular";
+}
+
+/* Line 1209 */
+h1, .h1, h2, .h2, h3, .h3
+{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Line 1263 */
+h3, .h3
+{
+  font-size: 24px;
+}
+
+/* Line 1060 
+*
+{
+  box-sizing: border-box;
+}*/
+
+/* Line 3862 */
+.nav > li
+{
+  position: relative;
+  display: block;
+}
+
+/* Line 4245 */
+.navbar-nav > li
+{
+  float: left;
+}
+
+
+
+/* Line 1395 
+ul, ol
+{
+  margin-top: 0px;
+  margin-bottom: 10px;
+}*/
+
+/* Line 3857 */
+.nav
+{
+  padding-left: 0px;
+  margin-bottom: 0px;
+  list-style-type: none;
+  list-style-image: none;
+  list-style-position: outside;
+}
+
+/* Line 4209 */
+.navbar-nav
+{
+  margin-top: 7.5px;
+  margin-right: -15px;
+  margin-bottom: 7.5px;
+  margin-left: -15px;
+}
+
+/* Line 4241 
+.navbar-nav
+{
+  float: left;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}*/
+
+/* Line 1060 
+*
+{
+  box-sizing: border-box;
+}*/
+
+/* Line 3366 */
+.collapse
+{
+  display: none;
+  visibility: hidden;
+}
+
+/* Line 4067 */
+.navbar-collapse
+{
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: transparent;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1) inset;
+}
+
+/* Line 4080 */
+.navbar-collapse
+{
+  width: auto;
+  border-top-width: 0px;
+  border-top-style: none;
+  box-shadow: none;
+}
+
+/* Line 4086 */
+.navbar-collapse.collapse
+{
+  display: block;
+  height: auto;
+  padding-bottom: 0px;
+  overflow-x: visible;
+  overflow-y: visible;
+  visibility: visible;
+}
+
+/* Line 4113 */
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse
+{
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* Line 4121 */
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse
+{
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/* Line 4426 */
+.navbar-default .navbar-collapse, .navbar-default .navbar-form
+{
+  border-top-color: #e7e7e7;
+  border-right-color: #e7e7e7;
+  border-bottom-color: #e7e7e7;
+  border-left-color: #e7e7e7;
+}
+
+
+/* Line 16 */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary
+{
+  display: block;
+}
+
+/* Line 4051 */
+.navbar
+{
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-image-source: none;
+  border-image-slice: 100% 100% 100% 100%;
+  border-image-width: 1 1 1 1;
+  border-image-outset: 0 0 0 0;
+  border-image-repeat: stretch stretch;
+}
+
+/* Line 4058 */
+.navbar
+{
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/* Line 4381 */
+.navbar-default
+{
+  background-color: #f8f8f8;
+  border-top-color: #e7e7e7;
+  border-right-color: #e7e7e7;
+  border-bottom-color: #e7e7e7;
+  border-left-color: #e7e7e7;
+}
+

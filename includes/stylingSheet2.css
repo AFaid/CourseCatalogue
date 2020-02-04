@@ -1,0 +1,110 @@
+#updateBtn{
+	float: right;
+	display: block;
+    padding: 6px 12px;
+    margin-top: 0px;
+	margin-right: 20px;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+	border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+	color: #fff;
+    background-color: #71D578;
+    border-color: #65BA6B;
+	letter-spacing: 0.15em;
+}
+
+#saveBtn{
+	float: left;
+	display: block;
+    padding: 6px 12px;
+    margin-top: 10px;
+	margin-right: 20px;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+	border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+	color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+	letter-spacing: 0.15em;
+}
+
+#updateBtn:hover{
+	background-color: #42C565;
+}
+
+#removeBtn{
+	float: left;
+	display: inline-block;
+    padding: 6px 12px;
+    margin-top: 0px;
+	margin-right: 20px;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+	border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+	color: #fff;
+    background-color: #F55F5F;
+    border-color: #D34646;
+	letter-spacing: 0.15em;
+}
+
+#removeBtn:hover{
+	background-color: #F24646;
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-Text{
+	text-decoration: line-through;
+}
+
+.checkbox input[type="checkbox"]{
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.checkbox-Text{
+	display: inline-block;
+	font-size: 18px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.checkbox{
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.floatRight{
+	float: right;
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
